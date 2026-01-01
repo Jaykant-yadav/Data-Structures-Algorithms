@@ -51,7 +51,7 @@ public class Loops {
 
 
         // Reverse the Given NUmber
-        int n = 15542;
+        /* int n = 15542;
         int rev = 0;
         while (n > 0) {
             int lastDigit = n % 10;
@@ -59,7 +59,58 @@ public class Loops {
             n = n / 10;
         }
 
-        System.out.println(rev);
+        System.out.println(rev); */
+
+        // Do while loop
+        /* int count = 1;
+        do{
+            System.out.println("Hey Guru Ji");
+            count++;
+        }while(count <= 5); */
+
+         Scanner scn = new Scanner(System.in);
+        /* do{
+            System.out.print("Enter your number : ");
+            int num = scn.nextInt();
+            if(num % 5 == 0) {
+                break;
+            }
+            System.out.println(num);
+        }while(true); */
+
+        // Continue Statement
+        /* for(int i=1; i<=5; i++){
+            if(i == 3){
+                continue;
+            }
+            System.out.println(i);
+        } */
+
+
+        /* do{
+            System.out.println("Enter your Number : ");
+            int n = scn.nextInt();
+            if(n % 10 == 0){
+                continue;
+            }
+            System.out.println("number was : " + n);
+        }while(true); */
+
+        // Prime Number
+        System.out.print("Enter Number : ");
+        int n = scn.nextInt();
+        boolean isPrime = true;
+        for(int i=2; i<=Math.sqrt(n); i++){
+            if(n % i == 0){
+                isPrime = false;
+            }
+        }
+
+        if(isPrime == true){
+            System.out.println("Prime Number");
+        }else{
+            System.out.println("Not Prime NUmber");
+        }
 
     }
 }

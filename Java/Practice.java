@@ -88,16 +88,44 @@ public class Practice {
         // System.out.println(isPrime == true ? "prime" : "Not Prime");
     }
 
-    public static void rangeBasePrime(int nums){
-        for(int i=2; i<=nums; i++){
-            if(primeNumber(i)){
+    public static void rangeBasePrime(int nums) {
+        for (int i = 2; i <= nums; i++) {
+            if (primeNumber(i)) {
                 System.out.print(i + " ");
             }
         }
     }
 
+    // Factorial number
+    public static void facNum(int num){
+        int fact = 1;
+        /* while (num > 0) {
+            fact *= num; 
+            num--;
+        } */
+
+        for(int i=1; i<=num; i++){
+            fact *= i;
+        }
+        System.out.println("Factorial: " + fact);
+    }
+
+    // Write a program to print the multiplication table of a number N, entered by the user.
+    public static void multiTable(int n){
+        for(int i=1; i<=10; i++){
+            System.out.println(n + "*" + i + " = " + i*n);
+        }
+    }
+
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
+        // Scanner scn = new Scanner(System.in);
+
+        // facNum(5);
+        // multiTable(5);
+        int a = 7;
+        int b = ++a;
+        System.out.println(a);
+        System.out.println(b);
         /*
          * int A = scn.nextInt();
          * int B = scn.nextInt();
@@ -197,8 +225,39 @@ public class Practice {
          * getLeapYear(year);
          */
 
-        rangeBasePrime(20);
+        // rangeBasePrime(20);
 
-        scn.close();
+        /*
+         * for(int i=0; i<5; i++){
+         * System.out.println("Hello");
+         * i+=2;
+         * }
+         */
+
+        // Write a Program that reads a set of integers, and then prints the sum of the
+        // even and odd integers.
+        /* int number;
+        int choice;
+        int evenSum = 0;
+        int oddSum = 0;
+
+        do {
+            System.out.print("Enter the number ");
+            number = scn.nextInt();
+
+            if (number % 2 == 0) {
+                evenSum += number;
+            } else {
+                oddSum += number;
+            }
+
+            System.out.println("Do you want to continue? Press 1 for yes or 0 for no");
+            choice = scn.nextInt();
+        } while (choice == 1);
+
+        System.out.println("Sum of even numbers : " + evenSum);
+        System.out.println("Sum of odd numbers : " + oddSum); */
+
+        // scn.close();
     }
 }

@@ -56,13 +56,25 @@ public class LiveSession {
         }
     }
 
+    // Reverse String
+    public static void revStr(String str){
+        String rev = "";
+        for(int i=str.length()-1; i>=0; i--){
+            rev += str.charAt(i);
+        }
+
+        System.out.println(rev);
+    }
+
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
+        /* Scanner scn = new Scanner(System.in);
         int day = scn.nextInt();
         int hour = scn.nextInt();
         int minute = scn.nextInt();
 
-        timeZoneConvert(day, hour, minute);
+        timeZoneConvert(day, hour, minute); */
+
+        revStr("ABCD");
 
     }
 }
